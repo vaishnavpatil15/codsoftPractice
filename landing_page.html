@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* background-color: rgba(90, 148, 90, 0.128); */
+        }
+        .nav{
+            display: flex;
+            gap: 5vw;
+            position: relative;
+            /* left: 10px; */
+            background-color: rgb(14, 108, 14);
+            color: aqua;
+            /* justify-content: center; */
+            align-items: center;
+            font-size: 25px;
+            height: 6vh;
+        }
+        .nav:hover{
+            background-color: rgb(55, 120, 55);
+        }
+        .logo img{
+            border-radius: 100px;
+            position: relative;
+            left: 20px;
+            /* width: 10px;
+            height: 10px; */
+        }
+        .first{
+            display: grid;
+            background-image: url(bg_img2.jpg);
+            background-size: 100vw 100vh;
+            height: 100vh;
+            width: 100vw;
+
+            grid-template-areas: "qt qt img""qt qt img";
+            /* grid-template-rows: 30vw 30vw 30vw; */
+            /* grid-column: 20vh 20vh 20vh; */
+        }
+        .quote{
+            /* grid-row: 2; */
+            /* grid-column: 2; */
+            grid-area: qt;
+            /* background-color: aqua; */
+            /* border: 2px solid red; */
+            font-size: 12vh;
+            color:rgb(1, 65, 50);
+            font-family: monospace;
+            position: relative;
+            left: 17vh;
+            top: 17vh;
+            
+        }
+        .jrny{
+            grid-area: qt;
+            font-size: 25px;
+            font-family: cursive;
+            position: relative;
+            top: 45vh;
+            left: 8vw;
+        }
+        .book{
+            /* border: 2px solid red; */
+            background-color:rgba(211, 139, 39, 0.694);
+            color:rgb(255, 255, 255);
+            border-radius: 30px;
+            grid-area: qt;
+            position: relative;
+            top: 55vh;
+            left: 18vw;
+            height: 4vh;
+            width: 10vw;
+            font-size: 30px;
+            padding: 2vh;
+            text-align: center;
+        }
+        .book:hover{
+            background-color: rgba(189, 113, 5, 0.817);
+        }
+        .items{
+            grid-area: img;
+            /* border: 2px solid red; */
+            position: relative;
+            right: 15vw;
+            top: 20vh;
+            font-size: 4vh;
+            padding: 1vh;
+            margin: 5vh;
+            color:rgb(0, 0, 0);
+            background-color: rgba(116, 248, 237, 0.548);
+            border-radius: 20px;
+        }
+        .items:hover{
+            
+            color:rgb(173, 227, 88);
+            background-color: rgba(8, 103, 95, 0.788);
+            
+        }
+        .text{
+            font-size: 5vh;
+            font-family: fantasy;
+            position: relative;
+            top: 20px;
+            left: 80px;
+            color: rgb(4, 113, 4);
+        }
+        .trend{
+            display: grid;
+            grid-template-columns: 20vw 20vw 20vw 20vw ;
+            /* row-gap: 10vh; */
+            column-gap: 3vw;
+            margin: 8vh;
+        }
+        .trends img{
+            background-color: antiquewhite;
+            /* border: 2px solid red; */
+            border-radius: 20px;
+            width: 20vw;
+            height: 40vh;
+            
+        }
+        .trends img:hover{
+                transform: scale(1.1);
+                transition-duration:1000ms;
+                width: 20vw;
+                height: 40vh;
+                opacity: 80%;
+
+
+        }
+
+        .trends{
+            font-size: 40px;
+            text-align: center;
+            position: relative;
+            color: whitesmoke;
+        
+        }
+        .second{
+            background-color: rgba(39, 107, 39, 0.411);
+            height: 200vh;
+        }
+        .head{
+            font-size: 8vh;
+            font-family: fantasy;
+            position: relative;
+            top: 20px;
+            left: 80px;
+            color: rgb(4, 113, 4);
+            grid-area: info;
+        }
+        .content{
+            font-size: 4vh;
+            position: relative;
+            top: 150px;
+            left: 80px;
+            width: 50vw;
+            color: whitesmoke;
+            grid-area: info;
+        }
+        .about{
+            display: grid;
+            grid-template-areas: "info info img";
+
+        }
+        .person{
+            position: relative;
+            top: 75px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo"><img src="logo.jpeg" alt="" width="50vw"></div>
+        <div>Home</div>
+        <div>Tours</div>
+        <div>Bookings</div>
+        <div>About Us</div>
+        <div>Contact Us</div>
+        <div>Profile</div>
+    </div>
+    <div class="first">
+        <div class="quote">Life is short,<br>World is wide..!</div>
+        <div class="jrny">A journey of 1000 miles starts with a single step. <br> book your trip now with us!</div>
+        <div class="book">Book a Trip</div>
+        <!-- <div>
+            <div class="items">Europe</div>
+            <div class="items">Nature</div>
+            <div class="items">Adventures</div>
+            <div class="items">Cultural Cities</div>
+        </div> -->
+    </div>
+    <div class="second">
+        <div class="text">Trending travel Plans</div>
+        <div class="trend">
+            <div class="trends">
+                <img src="thailand.webp" alt="" width="500px">
+                Thailand
+            </div>
+            <div class="trends">
+                <img src="europe.avif" alt="" width="500px">
+                Europe
+            </div>
+            <div class="trends">
+                <img src="indonesia.webp" alt="" width="500px">
+                Indonesia
+            </div>
+            <div class="trends">
+                <img src="istambul.webp" alt="" width="500px">
+                Istambul
+            </div>
+        </div>
+        <div class="about">
+            <div class="head">About Us</div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus facilis ea error animi ab voluptatum, sapiente impedit temporibus labore blanditiis dicta neque sint ducimus asperiores quos nisi earum voluptatibus perspiciatis nihil quasi maiores? Cumque dolore enim quam tempora rem quod fugit nam voluptates illum ut quasi laboriosam, labore ducimus itaque?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo blanditiis libero aspernatur ad suscipit expedita nesciunt. Totam sit quo omnis.
+            </div>
+            <div class="person">
+                <img src="persons.png" alt="" width="500px">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
